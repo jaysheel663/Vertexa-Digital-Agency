@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experimentation Hub|Vertexa</title>
+    <link rel="stylesheet" href="../css/experimentationhub.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo">Vertexa<span></span></a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="mainNav">
+            <a href="homepage.html">Home</a>
+            <a href="../services/services.html">Services</a>
+            <a href="../methodology/methodology.html">Methodology</a>
+            <a href="../resources/insightsandresources.html">Insights</a>
+            <a href="../innovation/innovationstudio.html" class="active">Innovation</a>
+            <a href="../roadmap/digitalgrowthroadmap.html">Roadmap</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <span class="eyebrow">VERTEXA EXPERIMENTATION HUB</span>
+        <h1>Test Ideas Before You Invest Big.</h1>
+        <p>The Vertexa Experimentation Hub helps teams validate assumptions,test customer experiences and explore new technology through structured,measurable experiments.</p>
+    </div>
+</section>
+<section class="dashboard-strip">
+    <div class="container dashboard-grid">
+    <div>
+            <span>Active Experiments</span>
+            <strong>08</strong>
+        </div>
+        <div>
+            <span>Ideas Tested</span>
+            <strong>32</strong>
+        </div>
+        <div>
+            <span>Validated Concepts</span>
+            <strong>17</strong>
+        </div>
+        <div>
+            <span>Average Cycle</span>
+            <strong>14d</strong>
+        </div>
+    </div>
+</section>
+<section id="experiments" class="section">
+    <div class="container">
+        <div class="section-heading">
+            <span>01/EXPERIMENT LIBRARY</span>
+            <h2>Ideas become useful when they are tested.</h2>
+            <p>Explore examples of experiments Vertexa can run across AI,customer experience,marketing,products and automation.</p>
+        </div>
+        <div class="experiment-grid">
+            <article class="experiment-card">
+                <div class="tag">AI</div>
+                <h3>Customer AI Assistant</h3>
+                <p>Test whether an AI assistant can answer common customer questions.</p>
+                <div class="experiment-info">
+                    <span>Cycle<b>10 days</b></span>
+                    <span>Stage<b>Prototype</b></span>
+                </div>
+                <button onclick="openExperiment('assistant')">View Experiment</button>
+            </article>
+            <article class="experiment-card">
+                <div class="tag">UX</div>
+                <h3>Landing Page Test</h3>
+                <p>Compare two page structures to understand which creates stronger engagement.</p>
+                <div class="experiment-info">
+                    <span>Cycle<b>7 days</b></span>
+                    <span>Stage<b>Testing</b></span>
+                </div>
+                <button onclick="openExperiment('landing')">View Experiment</button>
+            </article>
+            <article class="experiment-card">
+                <div class="tag">AUTO</div>
+                <h3>Lead Automation</h3>
+                <p>Test automated lead qualification and routing between marketing and sales.</p>
+                <div class="experiment-info">
+                    <span>Cycle<b>14 days</b></span>
+                    <span>Stage<b>Experiment</b></span>
+                </div>
+                <button onclick="openExperiment('lead')">View Experiment</button>
+            </article>
+            <article class="experiment-card">
+                <div class="tag">DATA</div>
+                <h3>Predictive Dashboard</h3>
+                <p>Explore whether customer signals can improve sales forecasting.</p>
+                <div class="experiment-info">
+                    <span>Cycle<b>21 days</b></span>
+                    <span>Stage<b>Research</b></span>
+                </div>
+                <button onclick="openExperiment('dashboard')">View Experiment</button>
+            </article>
+            <article class="experiment-card">
+                <div class="tag">CX</div>
+                <h3>Personalization Test</h3>
+                <p>Show different content to customers based on journey stage.</p>
+                <div class="experiment-info">
+                    <span>Cycle<b>14 days</b></span>
+                    <span>Stage<b>Testing</b></span>
+                </div>
+                <button onclick="openExperiment('personal')">View Experiment</button>
+            </article>
+            <article class="experiment-card">
+                <div class="tag">PRODUCT</div>
+                <h3>New Feature Prototype</h3>
+                <p>Validate demand for a potential digital product feature before development.</p>
+                <div class="experiment-info">
+                    <span>Cycle<b>18 days</b></span>
+                    <span>Stage<b>Prototype</b></span>
+                </div>
+                <button onclick="openExperiment('product')">View Experiment</button>
+            </article>
+        </div>
+        <div class="experiment-result" id="experimentResult">
+            <h3>Select an experiment</h3>
+            <p>Choose one of the experiments above to see its hypothesis,method,signal and next decision.</p>
+        </div>
+    </div>
+</section>
+<section id="framework" class="dark-section">
+    <div class="container">
+        <div class="section-heading light">
+            <span>02/EXPERIMENT FRAMEWORK</span>
+            <h2>A six-step learning loop.</h2>
+        </div>
+        <div class="framework">
+            <div>
+                <strong>01</strong>
+                <h3>Problem</h3>
+                <p>Define what needs to improve.</p>
+            </div>
+            <div>
+                <strong>02</strong>
+                <h3>Hypothesis</h3>
+                <p>State what you believe will happen.</p>
+            </div>
+            <div>
+                <strong>03</strong>
+                <h3>Prototype</h3>
+                <p>Create the smallest useful version.</p>
+            </div>
+            <div>
+                <strong>04</strong>
+                <h3>Measure</h3>
+                <p>Define signals that matter.</p>
+            </div>
+            <div>
+                <strong>05</strong>
+                <h3>Learn</h3>
+                <p>Analyze the result and feedback.</p>
+            </div>
+            <div>
+                <strong>06</strong>
+                <h3>Decide</h3>
+                <p>Scale,change,pause or stop.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section gray">
+    <div class="container">
+        <div class="section-heading">
+            <span>03/EXPERIMENT SCORECARD</span>
+            <h2>Measure learning, not just activity.</h2>
+        </div>
+        <div class="score-grid">
+            <div>
+                <span>Customer Value</span>
+                <strong>89</strong>
+                <div class="bar"><i style="width:89%"></i></div>
+            </div>
+            <div>
+                <span>Business Potential</span>
+                <strong>83</strong>
+                <div class="bar"><i style="width:83%"></i></div>
+            </div>
+            <div>
+                <span>Feasibility</span>
+                <strong>76</strong>
+                <div class="bar"><i style="width:76%"></i></div>
+            </div>
+            <div>
+                <span>Evidence Strength</span>
+                <strong>71</strong>
+                <div class="bar"><i style="width:71%"></i></div>
+            </div>
+        </div>
+        <p class="note">Illustrative values for the Vertexa experimentation interface.</p>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <span>04/EXPERIMENT OUTCOMES</span>
+            <h2>Every experiment should produce a decision.</h2>
+        </div>
+        <div class="outcome-grid">
+            <article>
+                <div class="outcome-icon">✓</div>
+                <h3>Scale</h3>
+                <p>Evidence supports the idea and the team moves toward production implementation.</p>
+            </article>
+            <article>
+                <div class="outcome-icon">↻</div>
+                <h3>Iterate</h3>
+                <p>The idea shows potential but needs another experiment or a different approach.</p>
+            </article>
+            <article>
+                <div class="outcome-icon">!</div>
+                <h3>Pause</h3>
+                <p>Evidence is not strong enough to justify further investment at this stage.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="cta">
+    <div class="container">
+        <h2>Don't Guess.Experiment.</h2>
+        <p>Vertexa helps teams turn uncertainty into structured learning before committing to large digital investments.</p>
+        <a href="contact.html" class="btn white">Discuss an Experiment</a>
+    </div>
+</section>
+<footer>
+    <p>© 2026 Vertexa Digital Agency.All Rights Reserved.</p>
+</footer>
+<script>
+function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("show");
+}
+function openExperiment(type){
+    const result=document.getElementById("experimentResult");
+    const data={
+        assistant:{
+            title:"Customer AI Assistant",
+            hypothesis:"Customers will resolve common questions faster when they can interact with an AI assistant.",
+            method:"Create a controlled prototype using a limited knowledge base.",
+            signal:"Resolution rate + customer feedback",
+            decision:"Scale if usefulness and accuracy meet the agreed threshold."
+        },
+        landing:{
+            title:"Landing Page Test",
+            hypothesis:"A clearer value proposition and simpler CTA will improve engagement.",
+            method:"Compare two page structures with the same audience.",
+            signal:"CTA interaction+conversion",
+            decision:"Adopt the structure producing stronger evidence."
+        },
+        lead:{
+            title:"Lead Automation",
+            hypothesis:"Automated lead qualification can reduce response time.",
+            method:"Create a rule-based qualification and routing workflow.",
+            signal:"Response time+qualified leads",
+            decision:"Expand automation if quality remains stable."
+        },
+        dashboard:{
+            title:"Predictive Dashboard",
+            hypothesis:"Combining behavioral signals can improve sales visibility.",
+            method:"Build a small dashboard using sample historical signals.",
+            signal:"Forecast accuracy + decision usefulness",
+            decision:"Proceed if the dashboard improves planning."
+        },
+        personal:{
+            title:"Personalization Test",
+            hypothesis:"Relevant content based on journey stage can improve engagement.",
+            method:"Show different content variants to selected visitor groups.",
+            signal:"Engagement+conversion",
+            decision:"Expand personalization when evidence supports it."
+        },
+        product:{
+            title:"New Feature Prototype",
+            hypothesis:"A lightweight prototype can validate whether users need the feature.",
+            method:"Create a clickable prototype and gather structured feedback.",
+            signal:"Interest+task completion",
+            decision:"Move toward development if demand is validated."
+        }};
+    const item=data[type];
+    result.innerHTML=`<h3>${item.title}</h3>
+        <div class="result-details">
+            <div><b>Hypothesis</b><p>${item.hypothesis}</p></div>
+            <div><b>Method</b><p>${item.method}</p></div>
+            <div><b>Success Signal</b><p>${item.signal}</p></div>
+            <div><b>Next Decision</b><p>${item.decision}</p></div>
+        </div>
+        `;}
+</script>
+</body>
+</html>

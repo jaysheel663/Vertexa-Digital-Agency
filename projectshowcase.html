@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Showcase|Vertexa</title>
+<link rel="stylesheet" href="../css/projectshowcase.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">VERTEXA</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+        <a href="homepage.html">Home</a>
+        <a href="../services/services.html">Services</a>
+        <a href="../methodology/methodology.html">Methodology</a>
+        <a href="../projects/projectshowcase.html">Projects</a>
+        <a href="../insights/insightsandresources.html">Insights</a>
+        <a href="../ccontact/contact.html">Contact</a>
+    </nav>
+</header>
+<section class="hero">
+    <div>
+        <span>VERTEXA PROJECTS</span>
+        <h1>Ideas Turned Into Digital Experiences.</h1>
+        <p>Explore the types of digital products,experiences,AI systems,platforms and automation solutions Vertexa creates for ambitious organizations.</p>
+        <a href="#projects" class="btn">Explore Projects</a>
+    </div>
+    <div class="project-wall">
+        <div>WEB</div>
+        <div>AI</div>
+        <div>PLATFORM</div>
+        <div>AUTOMATION</div>
+    </div>
+</section>
+<section id="projects" class="section">
+    <span>PROJECT PORTFOLIO</span>
+    <h2>Different Problems.Different Digital Solutions.</h2>
+    <div class="filter">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('ai')">AI</button>
+        <button onclick="filterProjects('platform')">Platforms</button>
+        <button onclick="filterProjects('automation')">Automation</button>
+    </div>
+    <div class="projects">
+        <article class="project web">
+            <div class="visual webv">WEB EXPERIENCE</div>
+            <span>WEB</span>
+            <h3>Digital Experience Platform</h3>
+            <p>A redesigned digital ecosystem focused on clearer navigation,stronger content structure and improved conversion paths.</p>
+            <b>UX•Design•Development</b>
+        </article>
+        <article class="project ai">
+            <div class="visual aiv">AI SYSTEM</div>
+            <span>AI</span>
+            <h3>Intelligent Customer Assistant</h3>
+            <p>An AI-powered conversational experience designed to answer questions,guide customers and reduce repetitive support work.</p>
+            <b>AI•UX•Automation</b>
+        </article>
+        <article class="project platform">
+            <div class="visual platformv">PLATFORM</div>
+            <span>PLATFORM</span>
+            <h3>Customer Self-Service Portal</h3>
+            <p>A centralized portal connecting account information,requests,documents,support and personalized customer actions.</p>
+            <b>Product•UX•Engineering</b>
+        </article>
+        <article class="project automation">
+            <div class="visual automationv">AUTOMATION</div>
+            <span>AUTOMATION</span>
+            <h3>Marketing Workflow Engine</h3>
+            <p>A connected workflow system that helps marketing teams automate repetitive campaign and lead-management activities.</p>
+            <b>Automation•CRM•Analytics</b>
+        </article>
+        <article class="project ai">
+            <div class="visual aiv">AI INSIGHT</div>
+            <span>AI</span>
+            <h3>Predictive Opportunity Engine</h3>
+            <p>A data-driven system designed to identify patterns and surface potential opportunities for teams.</p>
+            <b>AI•Data•Analytics</b>
+        </article>
+        <article class="project web">
+            <div class="visual webv">BRAND SYSTEM</div>
+            <span>WEB</span>
+            <h3>Modern Brand Website</h3>
+            <p>A content-rich website combining brand storytelling,service communication and conversion-focused experiences.</p>
+            <b>Brand•UX•Development</b>
+        </article>
+    </div>
+</section>
+<section class="dark">
+    <span>OUR PROJECT THINKING</span>
+    <h2>Every Project Starts With a Problem</h2>
+    <div class="thinking">
+<div>
+<strong>01</strong>
+<h3>Problem</h3>
+<p>What needs to improve?</p>
+</div>
+<div>
+<strong>02</strong>
+<h3>Context</h3>
+<p>What is happening today?</p>
+</div>
+<div>
+<strong>03</strong>
+<h3>Opportunity</h3>
+<p>Where can digital create value?</p>
+</div>
+<div>
+<strong>04</strong>
+<h3>Solution</h3>
+<p>What should we create?</p>
+</div>
+<div>
+<strong>05</strong>
+<h3>Outcome</h3>
+<p>How will success be understood?</p>
+</div>
+</div>
+</section>
+<section class="section">
+    <span>PROJECT CAPABILITIES</span>
+    <h2>What We Build</h2>
+    <div class="capabilities">
+<div>
+<h3>Web Experiences</h3>
+<p>Corporate websites,campaign experiences,landing pages and content platforms.</p>
+</div>
+<div>
+<h3>AI Products</h3>
+<p>Assistants,intelligent search,recommendation engines and AI workflows.</p>
+</div>
+<div>
+<h3>Digital Platforms</h3>
+<p>Customer portals,dashboards,SaaS products and enterprise platforms.</p>
+</div>
+<div>
+<h3>Automation Systems</h3>
+<p>Connected workflows that reduce repetitive work and improve operational visibility.</p>
+</div>
+</div>
+</section>
+<section class="cta">
+    <h2>Have a Digital Project in Mind?</h2>
+    <p>Let's turn the problem into a clear digital opportunity.</p>
+    <a href="contact.html" class="btn">Discuss Your Project</a>
+</section>
+<footer>© 2026 Vertexa Digital Agency. All Rights Reserved.</footer>
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+function filterProjects(type){
+    const projects=document.querySelectorAll(".project");
+    projects.forEach(project=>{
+        if(type==="all"||project.classList.contains(type)){
+            project.style.display="block";
+        }else{
+            project.style.display="none";
+        }
+    });
+}
+</script>
+</body>
+</html>

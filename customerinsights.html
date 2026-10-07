@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Insights|Vertexa</title>
+    <link rel="stylesheet" href="../css/customerinsights.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo">Vertexa<span></span></a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="mainNav">
+            <a href="homepage.html">Home</a>
+            <a href="../services/services.html">Services</a>
+            <a href="../methodology/methodology.html">Methodology</a>
+            <a href="../insights/insightsandresources.html" class="active">Insights</a>
+            <a href="../innovation/innovationstudio.html">Innovation</a>
+            <a href="../roadmap/digitalgrowthroadmap.html">Roadmap</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="eyebrow">CUSTOMER INTELLIGENCE</span>
+            <h1>Turn Customer Behavior Into Better Digital Decisions.</h1>
+            <p>Customers leave signals at every stage of their digital journey.Vertexa helps businesses understand those signals and convert them into better experiences,campaigns and products.</p>
+        </div>
+        <div class="customer-dashboard">
+            <div class="dashboard-top">
+                <span>Customer Signal Monitor</span>
+                <b>LIVE VIEW</b>
+            </div>
+            <div class="score">
+                <strong>84</strong>
+                <span>Customer Experience Index</span>
+            </div>
+            <div class="mini-bars">
+                <div><span style="height:80%"></span><small>Discover</small></div>
+                <div><span style="height:65%"></span><small>Explore</small></div>
+                <div><span style="height:92%"></span><small>Engage</small></div>
+                <div><span style="height:74%"></span><small>Convert</small></div>
+                <div><span style="height:86%"></span><small>Return</small></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stats">
+    <div class="container stats-grid">
+        <div>
+            <strong>5</strong>
+            <span>Journey stages monitored</span>
+        </div>
+        <div>
+            <strong>18</strong>
+            <span>Common behavioral signals</span>
+        </div>
+        <div>
+            <strong>84%</strong>
+            <span>Illustrative CX health score</span>
+        </div>
+        <div>
+            <strong>3.2x</strong>
+            <span>Potential insight-to-action speed</span>
+        </div>
+    </div>
+</section>
+<section id="dashboard" class="section">
+    <div class="container">
+        <div class="heading">
+            <span>01/CUSTOMER SIGNALS</span>
+            <h2>What are customers telling you without saying it?</h2>
+            <p>Digital behavior can reveal hesitation,intent,interest,frustration and opportunities for improvement.</p>
+        </div>
+        <div class="signal-grid">
+            <article>
+                <div class="signal-icon">01</div>
+                <h3>High Search Activity</h3>
+                <p>Customers repeatedly searching for a feature may indicate unmet information needs.</p>
+                <b>Intent signal</b>
+            </article>
+            <article>
+                <div class="signal-icon">02</div>
+                <h3>Page Abandonment</h3>
+                <p>Customers leaving during a form or checkout can reveal friction in the experience.</p>
+                <b>Friction signal</b>
+            </article>
+            <article>
+                <div class="signal-icon">03</div>
+                <h3>Repeat Visits</h3>
+                <p>Returning visitors can indicate growing interest before a final conversion.</p>
+                <b>Interest signal</b>
+            </article>
+            <article>
+                <div class="signal-icon">04</div>
+                <h3>Support Questions</h3>
+                <p>Repeated questions often reveal missing content or unclear product communication.</p>
+                <b>Experience signal</b>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="dark-section">
+    <div class="container">
+        <div class="heading light">
+            <span>02/CUSTOMER JOURNEY</span>
+            <h2>Every stage creates a different opportunity.</h2>
+        </div>
+        <div class="journey">
+            <div class="journey-step">
+                <span>01</span>
+                <h3>Discover</h3>
+                <p>Search,social,referrals and awareness.</p>
+                <strong>Goal:Attention</strong>
+            </div>
+            <div class="journey-step">
+                <span>02</span>
+                <h3>Explore</h3>
+                <p>Website visits,product research and comparison.</p>
+                <strong>Goal:Understanding</strong>
+            </div>
+            <div class="journey-step">
+                <span>03</span>
+                <h3>Engage</h3>
+                <p>Content,demos,conversations and interactions.</p>
+                <strong>Goal:Confidence</strong>
+            </div>
+            <div class="journey-step">
+                <span>04</span>
+                <h3>Convert</h3>
+                <p>Purchase,signup,enquiry or application.</p>
+                <strong>Goal:Action</strong>
+            </div>
+            <div class="journey-step">
+                <span>05</span>
+                <h3>Return</h3>
+                <p>Retention,loyalty,referrals and repeat usage.</p>
+                <strong>Goal:Relationship</strong>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section gray">
+    <div class="container">
+        <div class="heading">
+            <span>03/CUSTOMER SEGMENTS</span>
+            <h2>Different customers need different experiences.</h2>
+        </div>
+        <div class="segment-buttons">
+            <button onclick="showSegment('new')">New Visitors</button>
+            <button onclick="showSegment('returning')">Returning Users</button>
+            <button onclick="showSegment('buyers')">Potential Buyers</button>
+            <button onclick="showSegment('loyal')">Loyal Customers</button>
+        </div>
+        <div class="segment-result" id="segmentResult">
+            <h3>New Visitors</h3>
+            <p>New visitors need fast clarity.The first experience should communicate what the company does,who it helps and what the visitor should do next.</p>
+            <div class="result-grid">
+                <span>Primary need<b>Clarity</b></span>
+                <span>Key metric<b>Engagement</b></span>
+                <span>Best action<b>Educate</b></span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="heading">
+            <span>04/INSIGHT TO ACTION</span>
+            <h2>How Vertexa turns behavior into improvements.</h2>
+        </div>
+<div class="process-grid">
+<div>
+<strong>01</strong>
+<h3>Observe</h3>
+<p>Collect behavioral and business signals.</p>
+</div>
+<div>
+<strong>02</strong>
+<h3>Understand</h3>
+<p>Identify patterns and customer needs.</p>
+</div>
+<div>
+<strong>03</strong>
+<h3>Prioritize</h3>
+<p>Find the highest-value opportunities.</p>
+</div>
+<div>
+<strong>04</strong>
+<h3>Design</h3>
+<p>Create a better experience or solution.</p>
+</div>
+<div>
+<strong>05</strong>
+<h3>Test</h3>
+<p>Validate the change through experiments.</p>
+</div>
+<div>
+<strong>06</strong>
+<h3>Optimize</h3>
+<p>Improve continuously using new signals.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="cta">
+    <div class="container">
+        <h2>Your Customers Are Already Giving You Signals.</h2>
+        <p>Vertexa helps turn those signals into practical digital improvements.</p>
+        <a href="services.html" class="btn white">Explore Customer Experience</a>
+    </div>
+</section>
+<footer>
+    <p>© 2026 Vertexa Digital Agency.All Rights Reserved.</p>
+</footer>
+<script>
+function toggleMenu(){
+    document.getElementById("mainNav").classList.toggle("show");
+}
+function showSegment(type){
+    const result=document.getElementById("segmentResult");
+    const data={
+        new:{
+            title:"New Visitors",
+            text:"New visitors need fast clarity.Explain the value proposition quickly and guide them toward useful content.",
+            need:"Clarity",
+            metric:"Engagement",
+            action:"Educate"
+        },
+        returning:{
+            title:"Returning Users",
+            text:"Returning visitors already know the brand.Personalization,relevant content and faster pathways can improve their experience.",
+            need:"Relevance",
+            metric:"Return rate",
+            action:"Personalize"
+        },
+        buyers:{
+            title:"Potential Buyers",
+            text:"Potential buyers need confidence.Strong proof,clear pricing,comparisons and friction-free conversion paths are important.",
+            need:"Confidence",
+            metric:"Conversion",
+            action:"Prove value"
+        },
+        loyal:{
+            title:"Loyal Customers",
+            text:"Loyal customers can become repeat buyers and advocates when businesses continuously create useful experiences.",
+            need:"Recognition",
+            metric:"Retention",
+            action:"Reward"
+        }};
+    const item=data[type];
+    result.innerHTML=`<h3>${item.title}</h3>
+        <p>${item.text}</p>
+        <div class="result-grid">
+            <span>Primary need <b>${item.need}</b></span>
+            <span>Key metric <b>${item.metric}</b></span>
+            <span>Best action <b>${item.action}</b></span>
+        </div>
+`;}
+</script>
+</body>
+</html>  

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UX Strategy|Vertexa</title>
+<link rel="stylesheet" href="../css/uxstrategy.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">VERTEXA</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+        <a href="homepage.html">Home</a>
+        <a href="../services/services.html">Services</a>
+        <a href="../methodoloy/methodology.html">Methodology</a>
+        <a href="../projects/projectshowcase.html">Projects</a>
+        <a href="../insights/insightsandresources.html">Insights</a>
+        <a href="../contact/contact.html">Contact</a>
+    </nav>
+</header>
+<section class="hero">
+    <div>
+        <span>UX STRATEGY</span>
+        <h1>Design the Experience Before the Interface.</h1>
+        <p>UX strategy connects customer needs,business objectives and product capabilities into a clear experience direction.We design the structure behind digital experiences before focusing only on visual appearance.</p>
+    </div>
+    <div class="ux-map">
+        <div class="ux-center">USER</div>
+        <div class="ux-node n1">Needs</div>
+        <div class="ux-node n2">Journey</div>
+        <div class="ux-node n3">Content</div>
+        <div class="ux-node n4">Interaction</div>
+    </div>
+</section>
+<section id="ux" class="section">
+<span>OUR APPROACH</span>
+<h2>UX Starts With Understanding</h2>
+<p class="lead">We treat UX as a strategic discipline rather than a decoration layer.The objective is to make digital products easier to understand,navigate,use and remember.</p>
+<div class="ux-grid">
+<article>
+<b>01</b>
+<h3>Understand Users</h3>
+<p>Identify needs,motivations,behaviors and frustrations.</p>
+</article>
+<article>
+<b>02</b>
+<h3>Map Journeys</h3>
+<p>Visualize the complete experience across digital and physical touchpoints.</p>
+</article>
+<article>
+<b>03</b>
+<h3>Structure Information</h3>
+<p>Create clear navigation,hierarchy and content relationships.</p>
+</article>
+<article>
+<b>04</b>
+<h3>Define Interactions</h3>
+<p>Determine how users move through tasks and product experiences.</p>
+</article>
+<article>
+<b>05</b>
+<h3>Prototype</h3>
+<p>Make experience decisions tangible before engineering begins.</p>
+</article>
+<article>
+<b>06</b>
+<h3>Validate</h3>
+<p>Use feedback and testing to refine the experience direction.</p>
+</article>
+</div>
+</section>
+<section class="dark">
+    <span>UX STRATEGY LAYERS</span>
+    <h2>From Human Need to Digital Experience</h2>
+<div class="layers">
+<div>
+<strong>01</strong>
+<span>User Need</span>
+</div>
+<div>
+<strong>02</strong>
+<span>Customer Journey</span>
+</div>
+<div>
+<strong>03</strong>
+<span>Experience Principles</span>
+</div>
+<div>
+<strong>04</strong>
+<span>Information Architecture</span>
+</div>
+<div>
+<strong>05</strong>
+<span>Interaction Model</span>
+</div>
+<div>
+<strong>06</strong>
+<span>Interface System</span></div>
+    </div>
+</section>
+<section class="section">
+    <span>UX DELIVERABLES</span>
+    <h2>What We Create</h2>
+    <div class="deliverables">
+<div>
+<h3>Personas</h3>
+<p>Practical representations of important user groups and their needs.</p>
+</div>
+<div>
+<h3>Journey Maps</h3>
+<p>End-to-end visualization of customer experiences and friction points.</p>
+</div>
+<div>
+<h3>Information Architecture</h3>
+<p>Clear structures for navigation,content and functionality.</p>
+</div>
+<div>
+<h3>User Flows</h3>
+<p>Step-by-step paths that connect user goals with product actions.</p>
+</div>
+<div>
+<h3>Wireframes</h3>
+<p>Low-fidelity structures that validate experience decisions early.</p>
+</div>
+<div>
+<h3>Prototype</h3>
+<p>Interactive models used for communication and validation.</p>
+</div>
+</div>
+</section>
+<section class="section review">
+    <span>DESIGN QUESTIONS</span>
+    <h2>Every Experience Should Answer</h2>
+    <div class="questions">
+        <button onclick="showAnswer('Can the user understand what to do next?')">What happens next?</button>
+        <button onclick="showAnswer('Can the user complete the task without unnecessary friction?')">Is the task simple?</button>
+        <button onclick="showAnswer('Does the experience support the business objective?')">Does it create value?</button>
+        <button onclick="showAnswer('Can the experience adapt to different user needs?')">Is it flexible?</button>
+    </div>
+    <p id="answer"></p>
+</section>
+<section class="cta">
+    <h2>Make Your Digital Experience Easier to Use.</h2>
+    <p>Let's build an experience strategy around your users and business goals.</p>
+    <a href="contact.html" class="btn">Start UX Strategy</a>
+</section>
+<footer>© 2026 Vertexa Digital Agency.All Rights Reserved.</footer>
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+function showAnswer(text){
+    document.getElementById("answer").innerText=text;
+}
+</script>
+</body>
+</html>
