@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Enquiry|Vertexa Digital Agency</title>
+    <link rel="stylesheet" href="../css/projectenquiry.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-box">VXA</span>
+        <span>Vertexa</span>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+        <a href="../../index.html">Home</a>
+        <a href="../company/about.html">About</a>
+        <a href="../services/services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="../insights/insights-and-resources.html">Insights</a>
+        <a href="../contact/contact.html">Contact</a>
+    </nav>
+</header>
+<section class="project-hero">
+    <div>
+        <span class="section-tag">PROJECT ENQUIRY</span>
+        <h1>Have a Digital<span>Project in Mind?</span></h1>
+        <p>Tell us what you are trying to build,improve or transform.We will use the information to understand the opportunity and determine how Vertexa can contribute.</p>
+    </div>
+    <div class="project-visual">
+        <div>STRATEGY</div>
+        <span>→</span>
+        <div>DESIGN</div>
+        <span>→</span>
+        <div>TECHNOLOGY</div>
+        <span>→</span>
+        <div>DELIVERY</div>
+    </div>
+</section>
+<section class="project-intro">
+    <span class="section-tag">WHAT WE BUILD</span>
+    <h2>From Digital Ideas to Working Experiences</h2>
+    <p>Vertexa works across strategy,experience,technology and digital delivery to help businesses create useful and scalable digital products.</p>
+</section>
+<section class="project-services">
+    <div class="service-card">
+        <strong>01</strong>
+        <h3>Web Platforms</h3>
+        <p>Corporate websites,business platforms,portals and modern web experiences.</p>
+    </div>
+    <div class="service-card">
+        <strong>02</strong>
+        <h3>Digital Products</h3>
+        <p>Product concepts,customer platforms,applications and digital services.</p>
+    </div>
+    <div class="service-card">
+        <strong>03</strong>
+        <h3>Experience Design</h3>
+        <p>UX research,interface design,design systems and customer journeys.</p>
+    </div>
+    <div class="service-card">
+        <strong>04</strong>
+        <h3>Technology Solutions</h3>
+        <p>Frontend development,integrations,automation and technology strategy.</p>
+    </div>
+</section>
+<section class="enquiry-section">
+    <div class="enquiry-info">
+        <span class="section-tag">START YOUR ENQUIRY</span>
+        <h2>Let's Understand Your Project</h2>
+        <p>You don't need to have everything figured out.Share what you know today and we can explore the remaining questions together.</p>
+        <ul>
+            <li>Business objectives</li>
+            <li>Target customers or users</li>
+            <li>Current digital challenges</li>
+            <li>Expected outcomes</li>
+            <li>Technology requirements</li>
+            <li>Approximate timeline</li>
+        </ul>
+    </div>
+    <form class="enquiry-form" onsubmit="submitProject(event)">
+        <div class="form-row">
+            <div>
+                <label>Name</label>
+                <input type="text" required placeholder="Full name">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" required placeholder="Work email">
+            </div>
+        </div>
+        <div class="form-row">
+            <div>
+                <label>Company</label>
+                <input type="text" placeholder="Company">
+            </div>
+            <div>
+                <label>Phone</label>
+                <input type="tel" placeholder="Phone">
+            </div>
+        </div>
+        <label>Project Type</label>
+        <select required>
+            <option value="">Select project type</option>
+            <option>Website</option>
+            <option>Web Application</option>
+            <option>Mobile Application</option>
+            <option>Digital Platform</option>
+            <option>UX/UI Design</option>
+            <option>Digital Transformation</option>
+            <option>AI/Automation</option>
+            <option>Technology Consulting</option>
+        </select>
+        <label>Project Description</label>
+        <textarea rows="7"required placeholder="Describe your project,challenge or idea..."></textarea>
+        <label>Estimated Timeline</label>
+        <select>
+            <option>Not decided yet</option>
+            <option>Less than 1 month</option>
+            <option>1–3 months</option>
+            <option>3–6 months</option>
+            <option>6+ months</option>
+        </select>
+        <label>Additional Information</label>
+        <textarea rows="4"placeholder="Anything else we should know?"></textarea>
+        <button type="submit">Submit Project Enquiry→</button>
+        <p id="projectMessage"></p>
+    </form>
+</section>
+<section class="project-cta">
+    <h2>Not Ready to Submit a Full Enquiry?</h2>
+    <p>Start with a consultation and discuss the idea first.</p>
+    <a href="../contact/book-consultation.html">Book a Consultation</a>
+</section>
+<footer>
+        © 2026 Vertexa Digital Agency. All Rights Reserved.
+</footer>
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+function submitProject(event){
+    event.preventDefault();
+    document.getElementById("projectMessage").textContent="Thank you.Your project enquiry has been submitted successfully.";
+}
+</script>
+</body>
+</html>

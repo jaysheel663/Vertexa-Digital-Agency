@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Consultation|Vertexa</title>
+    <link rel="stylesheet" href="../css/bookconsultation.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-box">VXA</span>
+        <span>Vertexa</span>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+        <a href="../homepage.html">Home</a>
+        <a href="../company/about.html">About</a>
+        <a href="../services/services.html">Services</a>
+        <a href="../projects/projects.html">Projects</a>
+        <a href="../insights/insights-and-resources.html">Insights</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<section class="consultation-hero">
+    <div class="hero-content">
+        <span class="section-tag">BOOK A CONSULTATION</span>
+        <h1>Start With a<span>Focused Conversation</span></h1>
+        <p>A consultation gives us an opportunity to understand your business,identify the challenge and explore practical digital directions before defining the next step.</p>
+        <div class="hero-points">
+            <span>✓Business discovery</span>
+            <span>✓Digital opportunity discussion</span>
+            <span>✓Technology and experience guidance</span>
+        </div>
+    </div>
+    <div class="consultation-card">
+        <h3>What Happens Next?</h3>
+        <div class="step">
+            <strong>01</strong>
+            <div>
+                <h4>Share Your Context</h4>
+                <p>Tell us about your business and current challenge.</p>
+            </div>
+        </div>
+        <div class="step">
+            <strong>02</strong>
+            <div>
+                <h4>Discovery Conversation</h4>
+                <p>We discuss goals,users,priorities and opportunities.</p>
+            </div>
+        </div>
+        <div class="step">
+            <strong>03</strong>
+            <div>
+                <h4>Explore Directions</h4>
+                <p>We identify possible approaches and next steps.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="consultation-intro">
+    <span class="section-tag">WHY CONSULT</span>
+    <h2>Move From Questions to Clarity</h2>
+    <p>A consultation is useful when you know something needs to improve but need a clearer understanding of where to start.</p>
+</section>
+<section class="benefits-section">
+    <div class="benefits-grid">
+        <article class="benefit-card">
+            <span>01</span>
+            <h3>Understand the Challenge</h3>
+            <p>Break down business,customer and technology challenges into clear areas of opportunity.</p>
+        </article>
+        <article class="benefit-card">
+            <span>02</span>
+            <h3>Explore Digital Opportunities</h3>
+            <p>Identify where digital experiences,automation,platforms or technology can create value.</p>
+        </article>
+        <article class="benefit-card">
+            <span>03</span>
+            <h3>Discuss Technology</h3>
+            <p>Explore suitable technology directions without immediately committing to a particular solution.</p>
+        </article>
+        <article class="benefit-card">
+            <span>04</span>
+            <h3>Define Next Steps</h3>
+            <p>Create a practical starting point for discovery,strategy,design or development.</p>
+        </article>
+    </div>
+</section>
+<section class="booking-section">
+    <div class="booking-content">
+        <span class="section-tag">CONSULTATION REQUEST</span>
+        <h2>Tell Us About Your Business</h2>
+        <p>Complete the form below with the information you are comfortable sharing.The purpose is to help us prepare for a useful first conversation.</p>
+    </div>
+    <form class="booking-form" onsubmit="submitConsultation(event)">
+        <div class="form-row">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label>Work Email</label>
+                <input type="email" required placeholder="you@company.com">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label>Company</label>
+                <input type="text" placeholder="Company name">
+            </div>
+            <div class="form-group">
+                <label>Job Role</label>
+                <input type="text" placeholder="Your role">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Consultation Topic</label>
+            <select required>
+                <option value="">Choose a topic</option>
+                <option>Digital Strategy</option>
+                <option>Website/Web Application</option>
+                <option>UI/UX Design</option>
+                <option>Digital Transformation</option>
+                <option>AI/Automation</option>
+                <option>Digital Marketing</option>
+                <option>Technology Strategy</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Preferred Discussion Time</label>
+            <select>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Tell Us More</label>
+            <textarea rows="6"placeholder="Briefly describe your challenge or goal..."></textarea>
+        </div>
+        <button class="primary-button" type="submit">Request Consultation→</button>
+        <p id="bookingMessage"></p>
+    </form>
+</section>
+<section class="consultation-cta">
+    <h2>Not Sure Where to Start?</h2>
+    <p>That's exactly what the first conversation is for.</p>
+    <a href="contact.html" class="secondary-button">Contact Vertexa</a>
+</section>
+<footer class="footer">
+        © 2026 Vertexa Digital Agency.All Rights Reserved.
+    </div>
+</footer>
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+function submitConsultation(event){
+    event.preventDefault();
+    document.getElementById("bookingMessage").textContent="Thank you.Your consultation request has been received.";
+}
+</script>
+</body>
+</html>
