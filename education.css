@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f8fafc;
+    color:#111827;
+    line-height:1.7;
+}
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 5px 22px rgba(15,23,42,.08);
+}
+.nav{
+    width:92%;
+    max-width:1200px;
+    min-height:75px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    font-size:30px;
+    font-weight:800;
+    text-decoration:none;
+    color:#111827;
+}
+.logo span{
+    color:#6366f1;
+}
+nav{
+    display:flex;
+    gap:24px;
+}
+nav a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:600;
+}
+.menu{
+    display:none;
+    background:#111827;
+    color:white;
+    border:0;
+    border-radius:9px;
+    padding:9px 13px;
+    font-size:20px;
+}
+.hero{
+    min-height:650px;
+    padding:100px 7%;
+    display:grid;
+    grid-template-columns:1.1fr.9fr;
+    gap:70px;
+    align-items:center;
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+    color:white;
+}
+.hero-content>span,.future-text>span,.heading span{
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight:800;
+    color:#c7d2fe;
+}
+.hero h1{
+    font-size:clamp(2.7rem,5.5vw,4.7rem);
+    line-height:1.05;
+    margin:15px 0 25px;
+}
+.hero p{
+    font-size:18px;
+    color:#ede9fe;
+    margin-bottom:30px;
+}
+.hero a,.cta a{
+    background:white;
+    color:#4f46e5;
+    padding:13px 23px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:800;
+    display:inline-block;
+}
+.learning-dashboard{
+    background:#111827;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 30px 70px rgba(15,23,42,.35);
+}
+.dashboard-head{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+.dashboard-head small{
+    color:#a5b4fc;
+}
+.course-card{
+    display:flex;
+    gap:15px;
+    background:#1f2937;
+    padding:18px;
+    border-radius:15px;
+}
+.course-icon{
+    width:50px;
+    height:50px;
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+    background:#6366f1;
+    font-weight:800;
+}
+.course-card span,.course-card strong{
+    display:block;
+}.course-card span{
+    font-size:12px;
+    color:#94a3b8;
+    margin-top:4px;
+}
+.progress-label{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    margin-top:25px;
+}
+.progress{
+    height:8px;
+    background:#334155;
+    border-radius:20px;
+    margin-top:8px;
+    overflow:hidden;
+}
+.progress span{
+    display:block;
+    width:72%;
+    height:100%;
+    background:#a5b4fc;
+}
+.learning-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:25px;
+}
+.learning-stats div{
+    background:#1f2937;
+    padding:15px;
+    text-align:center;
+    border-radius:12px;
+}
+.learning-stats b,.learning-stats small{
+    display:block;
+}
+.learning-stats small{
+    font-size:11px;
+    color:#94a3b8;
+}
+.section,.student-journey,.platform,.future{
+    padding:95px 7%;
+}
+.heading{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 50px;
+}
+.heading span{
+    color:#6366f1;
+}
+.heading h2{
+    font-size:40px;
+    line-height:1.2;
+    margin:10px 0 15px;
+}
+.heading p{
+    color:#64748b;
+}
+.education-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.education-grid div{
+    background:white;
+    border:1px solid #e2e8f0;
+    padding:28px;
+    border-radius:20px;
+}
+.education-grid b{
+    font-size:28px;
+    color:#6366f1;
+}
+.education-grid h3{
+    margin:7px 0;
+}
+.education-grid p{
+    font-size:14px;
+    color:#64748b;
+}
+.student-journey{
+    background:#eef2ff;
+}
+.journey{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+.journey div{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+}
+.journey strong{
+    color:#6366f1;
+    font-size:23px;
+}
+.journey h3{
+    margin:8px 0;
+}
+.journey p{
+    font-size:13px;
+    color:#64748b;
+}
+.platform{
+    background:#111827;
+    color:white;
+}
+.platform.heading h2{
+    color:white;
+}
+.platform-stack{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    gap:9px;
+}
+.stack-item{
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    background:#1f2937;
+    border:1px solid #374151;
+    color:#cbd5e1;
+}
+.stack-item.highlight{
+    background:#6366f1;
+    color:white;
+}
+.stack-item.dark{
+    background:#312e81;
+}
+.future{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+.future-text>span{
+    color:#6366f1;
+}
+.future-text h2{
+    font-size:40px;
+    line-height:1.2;
+    margin:10px 0 15px;
+}
+.future-text p{
+    color:#64748b;
+}
+.future-cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+.future-cards div{
+    padding:30px;
+    background:#eef2ff;
+    color:#4338ca;
+    border-radius:15px;
+    font-weight:700;
+}
+.cta{
+    text-align:center;
+    padding:90px 20px;
+    background:#eef2ff;
+}
+.cta h2{
+    font-size:40px;
+}
+.cta p{
+    color:#64748b;
+    margin:12px 0 25px;
+}
+.cta a{
+    background:#4f46e5;
+    color:white;
+}
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+@media(max-width:1000px){
+.hero,.future{
+    grid-template-columns:1fr;
+}
+.education-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.journey{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:700px){
+nav{
+    display:none;
+    position:absolute;
+    top:75px;
+    left:0;
+    right:0;
+    background:white;
+    padding:25px;
+    flex-direction:column;
+}
+nav.show{
+    display:flex;
+}
+.menu{
+    display:block;
+}
+.hero{
+    padding:70px 6%;
+}
+.education-grid,.journey,.future-cards{
+    grid-template-columns:1fr;
+}
+.heading h2,.future-text h2,.cta h2{
+    font-size:31px;
+}
+}

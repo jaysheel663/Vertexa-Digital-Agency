@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f8fafc;
+    color:#111827;
+    line-height:1.7;
+}
+.navbar{
+    height:76px;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 7%;
+    box-shadow:0 4px 20px rgba(0,0,0,.06);
+    position:relative;
+    z-index:100;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:800;
+}
+.logo-box{
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+    color:#ffffff;
+    padding:7px 9px;
+    border-radius:7px;
+    font-size:13px;
+}
+nav{
+    display:flex;
+    gap:25px;
+}
+nav a{
+    text-decoration:none;
+    color:#111827;
+    font-weight:600;
+}
+nav a:hover{
+    color:#6366f1;
+}
+.menu-btn{
+    display:none;
+    border:none;
+    background:transparent;
+    font-size:25px;
+}
+.hero{
+    min-height:650px;
+    padding:90px 8%;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:70px;
+    color:#ffffff;
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+}
+.section-tag{
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight:800;
+    color:#6366f1;
+}
+.hero .section-tag{
+    color:#ddd6fe;
+}
+.hero h1{
+    font-size:clamp(44px,5vw,70px);
+    line-height:1.05;
+    margin:18px 0;
+}
+.hero p{
+    max-width:700px;
+    font-size:18px;
+}
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+.primary-button,
+.secondary-button{
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:700;
+}
+.primary-button{
+    background:#111827;
+    color:#ffffff;
+}
+.secondary-button{
+    border:1px solid rgba(255,255,255,.5);
+    color:#ffffff;
+}
+.hero-card{
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.35);
+    backdrop-filter:blur(10px);
+}
+.card-label{
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:30px;
+}
+.roadmap-flow{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:12px;
+}
+.roadmap-flow span{
+    background:#ffffff;
+    color:#6366f1;
+    padding:12px 15px;
+    border-radius:9px;
+    font-weight:800;
+}
+.introduction{
+    max-width:950px;
+    margin:auto;
+    padding:100px 7%;
+    text-align:center;
+}
+.introduction h2,
+.section-heading h2{
+    font-size:42px;
+    line-height:1.2;
+    margin:15px 0;
+}
+.introduction p,
+.section-heading p{
+    color:#64748b;
+}
+.roadmap-section,
+.pillars-section,
+.outcomes-section,
+.faq-section{
+    padding:90px 8%;
+}
+.section-heading{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+.roadmap-grid{
+    max-width:1400px;
+    margin:50px auto 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.roadmap-card{
+    background:#ffffff;
+    padding:32px;
+    border-radius:18px;
+    box-shadow:0 10px 35px rgba(15,23,42,.07);
+}
+.number{
+    color:#6366f1;
+    font-size:28px;
+    font-weight:800;
+}
+.roadmap-card h3{
+    font-size:23px;
+    margin:8px 0;
+}
+.roadmap-card p{
+    color:#64748b;
+}
+.roadmap-card ul{
+    margin-top:15px;
+    padding-left:20px;
+    color:#475569;
+}
+.pillars-section{
+    background:#ffffff;
+}
+.pillars-grid{
+    max-width:1300px;
+    margin:45px auto 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+.pillar-card{
+    padding:30px;
+    background:#f8fafc;
+    border-radius:16px;
+}
+.pillar-card h3{
+    margin-bottom:8px;
+}
+.pillar-card p{
+    color:#64748b;
+}
+.outcomes-section{
+    background:#111827;
+    color:#ffffff;
+}
+.outcomes-content{
+    max-width:1100px;
+    margin:auto;
+}
+.outcomes-section.section-tag{
+    color:#a5b4fc;
+}
+.outcomes-section h2{
+    font-size:42px;
+    line-height:1.2;
+    margin:15px 0;
+}
+.outcomes-section p{
+    color:#cbd5e1;
+}
+.outcome-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:35px;
+}
+.outcome-list div{
+    padding:22px;
+    border:1px solid #374151;
+    border-radius:12px;
+}
+.outcome-list strong{
+    color:#a5b4fc;
+    margin-right:10px;
+}
+.faq-container{
+    max-width:900px;
+    margin:45px auto 0;
+}
+.faq-item{
+    background:#ffffff;
+    margin-bottom:12px;
+    border-radius:12px;
+    overflow:hidden;
+}
+.faq-question{
+    width:100%;
+    padding:20px;
+    background:#ffffff;
+    border:none;
+    display:flex;
+    justify-content:space-between;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    text-align:left;
+}
+.faq-answer{
+    display:none;
+    padding:0 20px 20px;
+    color:#64748b;
+}
+.faq-answer.open{
+    display:block;
+}
+.cta{
+    margin:50px 7%;
+    padding:75px 30px;
+    text-align:center;
+    border-radius:25px;
+    color:#ffffff;
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+}
+.cta h2{
+    font-size:42px;
+}
+.cta p{
+    margin:10px 0 20px;
+}
+.footer{
+    background:#111827;
+    color:#ffffff;
+    text-align:center;
+    padding:28px;
+}
+@media(max-width:900px){
+    .menu-btn{
+        display:block;
+    }
+    nav{
+        display:none;
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+        background:#ffffff;
+        flex-direction:column;
+        padding:25px;
+    }
+    nav.active{
+        display:flex;
+    }
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .hero p{
+        margin:auto;
+    }
+    .hero-buttons{
+        justify-content:center;
+    }
+    .roadmap-grid,
+    .pillars-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media(max-width:600px){
+    .roadmap-grid,
+    .pillars-grid,
+    .outcome-list{
+        grid-template-columns:1fr;
+    }
+    .introduction h2,
+    .section-heading h2,
+    .outcomes-section h2,
+    .cta h2{
+        font-size:32px;
+    }
+    .hero{
+        padding:70px 6%;
+    }
+    .roadmap-section,
+    .pillars-section,
+    .outcomes-section,
+    .faq-section{
+        padding:65px 6%;
+    }
+} 

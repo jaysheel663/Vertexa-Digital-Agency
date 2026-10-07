@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f8fafc;
+    color:#111827;
+    line-height:1.7;
+}
+.navbar{
+    height:76px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 7%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,.06);
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:800;
+}
+.logo-box{
+    width:42px;
+    height:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+    color:white;
+    border-radius:10px;
+    font-size:13px;
+}
+.navbar nav{
+    display:flex;
+    gap:25px;
+}
+.navbar nav a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:600;
+    font-size:14px;
+}
+.menu-btn{
+    display:none;
+    border:0;
+    background:none;
+    font-size:25px;
+}
+.section-tag{
+    color:#6366f1;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+.consultation-hero{
+    padding:100px 8%;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
+    align-items:center;
+    background:linear-gradient(135deg,#eef2ff,#faf5ff);
+}
+.hero-content h1{
+    font-size:clamp(45px,6vw,72px);
+    line-height:1.05;
+    margin:20px 0;
+}
+.hero-content h1 span{
+    display:block;
+    color:#6366f1;
+}
+.hero-content p{
+    max-width:700px;
+    color:#64748b;
+    font-size:18px;
+}
+.hero-points{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:25px;
+    color:#334155;
+    font-weight:600;
+}
+.consultation-card{
+    background:#111827;
+    color:white;
+    padding:42px;
+    border-radius:25px;
+}
+.consultation-card h3{
+    font-size:28px;
+    margin-bottom:25px;
+}
+.step{
+    display:flex;
+    gap:20px;
+    padding:22px 0;
+    border-top:1px solid #374151;
+}
+.step strong{
+    color:#a5b4fc;
+    font-size:24px;
+}
+.step h4{
+    font-size:17px;
+}
+.step p{
+    color:#94a3b8;
+    font-size:14px;
+}
+.consultation-intro{
+    max-width:850px;
+    text-align:center;
+    margin:auto;
+    padding:100px 8% 70px;
+}
+.consultation-intro h2{
+    font-size:42px;
+    margin:15px 0;
+}
+.consultation-intro p{
+    color:#64748b;
+}
+.benefits-section{
+    padding:50px 8% 100px;
+}
+.benefits-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+.benefit-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(15,23,42,.07);
+}
+.benefit-card span{
+    font-size:28px;
+    color:#6366f1;
+    font-weight:800;
+}
+.benefit-card h3{
+    margin:12px 0;
+}
+.benefit-card p{
+    color:#64748b;
+    font-size:14px;
+}
+.booking-section{
+    padding:100px 8%;
+    background:white;
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:80px;
+}
+.booking-content h2{
+    font-size:42px;
+    line-height:1.15;
+    margin:15px 0;
+}
+.booking-content p{
+    color:#64748b;
+}
+.booking-form{
+    background:#f8fafc;
+    padding:40px;
+    border-radius:20px;
+}
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+.form-group{
+    margin-bottom:20px;
+}
+.form-group label{
+    display:block;
+    font-weight:700;
+    margin-bottom:7px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    background:white;
+    font:inherit;
+}
+.primary-button{
+    padding:14px 24px;
+    border:0;
+    border-radius:9px;
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+}
+#bookingMessage{
+    margin-top:15px;
+    color:#16a34a;
+    font-weight:600;
+}
+.consultation-cta{
+    margin:80px 8%;
+    padding:70px;
+    text-align:center;
+    border-radius:25px;
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+    color:white;
+}
+.consultation-cta h2{
+    font-size:40px;
+}
+.consultation-cta p{
+    margin:10px 0 25px;
+}
+.secondary-button{
+    display:inline-block;
+    padding:13px 22px;
+    background:white;
+    color:#6366f1;
+    border-radius:9px;
+    text-decoration:none;
+    font-weight:700;
+}
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:28px;
+}
+@media(max-width:1000px){
+    .consultation-hero,
+    .booking-section{
+        grid-template-columns:1fr;
+    }
+    .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:850px){
+    .navbar nav{
+        display:none;
+    }
+    .navbar nav.active{
+        display:flex;
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        padding:25px;
+    }
+    .menu-btn{
+        display:block;
+    }
+}
+@media(max-width:600px){
+    .benefits-grid,
+    .form-row{
+        grid-template-columns:1fr;
+    }
+    .booking-form{
+        padding:25px;
+    }
+    .consultation-cta{
+        padding:45px 25px;
+    }
+}
